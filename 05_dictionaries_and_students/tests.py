@@ -3,7 +3,7 @@ from unittest import TestCase
 class Evaluate(TestCase):
     def test_dict(self):
         try:
-            from exercise import student
+            from student import student
         except ImportError:
             self.assertTrue(False, "Make sure that a variable 'student' exists, and has the value provided in the comments. If it does and you still see this error, check for syntax errors in your code.")
         self.assertTrue(isinstance(student, dict), "The student variable should be a dictionary, but is a {}.".format(type(student).__name__))
@@ -16,11 +16,11 @@ class Evaluate(TestCase):
 
     def test_average_grade(self):
         try:
-            from exercise import student
+            from student import student
         except ImportError:
             self.assertTrue(False, "The variable student does not exist. Make sure the variable student exists and has the values as per the comment in the code. If it does and you still see this error, check for syntax errors in your code.")
         try:
-            from exercise import average_grade
+            from student import average_grade
         except ImportError:
             self.assertTrue(False, "The function average_grade does not exist. Make sure the function exists and has the values as per the comment in the code. If it does and you still see this error, check for syntax errors in your code.")
         self.assertEqual(average_grade(student), 77, "average_age({}) returned {} instead of the expected 77. Make sure the student['grades'] is (66, 77, 88) and the function is calculating and returning the average of these grades.".format(student, average_grade(student)))
@@ -29,7 +29,7 @@ class Evaluate(TestCase):
 
     def test_average_grade_all_students(self):
         try:
-            from exercise import average_grade_all_students
+            from student import average_grade_all_students
         except ImportError:
             self.assertTrue(False, "Make sure a method average_grade_all_students exists, and implements the average grade of a list of students. If it does and you still see this error, check for syntax errors in your code.")
 

@@ -4,7 +4,7 @@ from unittest import TestCase
 class Evaluate(TestCase):
     def test_list(self):
         try:
-            from exercise import my_list
+            from student import my_list
         except ImportError:
             self.assertTrue(
                 False,
@@ -25,7 +25,7 @@ class Evaluate(TestCase):
 
     def test_tuple(self):
         try:
-            from exercise import my_tuple
+            from student import my_tuple
         except ImportError:
             self.assertTrue(
                 False,
@@ -47,7 +47,7 @@ class Evaluate(TestCase):
 
     def test_set(self):
         try:
-            from exercise import set1, set2
+            from student import set1, set2
         except ImportError:
             self.assertTrue(
                 False,

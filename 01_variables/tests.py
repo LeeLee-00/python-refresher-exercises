@@ -4,7 +4,7 @@ from unittest import TestCase
 class Evaluate(TestCase):
     def test_exercise(self):
         try:
-            from exercise import var1, var2
+            from student import var1, var2
         except ImportError:
             self.assertTrue(
                 False, "Make sure you have created two variables, var1 and var2."
@@ -17,7 +17,7 @@ class Evaluate(TestCase):
 
     def test_multiply(self):
         try:
-            from exercise import num1, num2
+            from student import num1, num2
         except ImportError:
             self.assertTrue(
                 False, "Make sure you have created two variables, num1 and num2."
