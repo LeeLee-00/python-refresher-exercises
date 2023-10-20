@@ -18,8 +18,10 @@ class Store:
     @classmethod
     def franchise(cls, store):
         # Return another store, with the same name as the argument's name, plus " - franchise"
+        return cls(store.name + " - franchise")
 
     @staticmethod
     def store_details(store):
         # Return a string representing the argument
         # It should be in the format 'NAME, total stock price: TOTAL'
+        return store.name + ", total stock price: " + str(store.stock_price())
